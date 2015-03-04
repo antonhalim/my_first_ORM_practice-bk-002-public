@@ -1,0 +1,7 @@
+$LOAD_PATH << '.'
+require 'pry'
+require 'db_connection'
+require 'hacktive_record'
+require 'album'
+require 'artist'
+require 'song'
