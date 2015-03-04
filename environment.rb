@@ -1,6 +1,8 @@
 $LOAD_PATH << '.'
 require 'pry'
 require 'db_connection'
+DBConnection.instance.dbname = 'hacktive_record_practice'
+require 'inflecto'
 require 'hacktive_record'
 require 'album'
 require 'artist'

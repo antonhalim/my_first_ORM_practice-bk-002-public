@@ -9,6 +9,6 @@ class DBConnection
   end
 
   def connection
-    @connection ||= PG.connect(dbname: dbname, host: 'localhost')
+    PG.connect(dbname: dbname, host: 'localhost')
   end
 end
