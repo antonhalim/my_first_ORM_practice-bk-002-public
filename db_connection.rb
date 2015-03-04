@@ -1,6 +1,7 @@
 require 'singleton'
 require 'pg'
 class DBConnection
+  attr_accessor :dbname
   include Singleton
 
   def exec(sql, args=[])
@@ -8,6 +9,6 @@ class DBConnection
   end
 
   def connection
-    @connection ||= PG.connect(dbname: 'hacktive_record_practice', host: 'localhost')
+    @connection ||= PG.connect(dbname: dbname, host: 'localhost')
   end
 end
