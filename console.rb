@@ -1,8 +1,2 @@
-$LOAD_PATH << '.'
-require 'pry'
-require 'db_connection'
-require 'album'
-require 'artist'
-require 'song'
-
+require_relative 'environment'
 Pry.start
